@@ -1,5 +1,6 @@
 const program = require('commander')
 const createPassword = require('./utils/createPassword')
+const chalk = require('chalk')
 
 const log = console.log;
 
@@ -22,4 +23,4 @@ const {length, save, numbers, symbols} = program.opts();
 const generatedPassword = createPassword(length, numbers, symbols);
 
 // Output the generated pass
-log(generatedPassword);
+log(chalk.blue('Generated Password: ') + chalk.bold(generatedPassword));
