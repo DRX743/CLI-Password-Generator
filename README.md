@@ -1,6 +1,6 @@
 # Command Line Password Generator
+NodeJS command line app to generate random passwords
 
-Node.js command line app to generate random passwords
 ## commander.js
 ```
 https://github.com/tj/commander.js/
