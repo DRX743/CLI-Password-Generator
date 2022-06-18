@@ -10,7 +10,11 @@ const createPassword = (length = 8, hasNumbers = true, hasSymbols = true) => {
 }
 
 const generatePassword = (length, chars) => {
-    
+    let password = '';
+    for(i = 0; i < length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length))
+    }
+    return password;
 }
 
 module.exports = createPassword;
